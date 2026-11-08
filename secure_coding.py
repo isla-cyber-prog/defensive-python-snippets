@@ -43,7 +43,7 @@ def validate_user_input(user_input):
     return True, "Input is valid and safe."
 
 # Quick local tests to verify functionality
-if _name_ == "_main_":
+if __name__ == "__main__":
     print("--- Testing SQL Injection Vulnerability ---")
     bad_user = "' OR '1'='1"
     print(f"Vulnerable Query: {vulnerable_login(bad_user, 'password123')}")
